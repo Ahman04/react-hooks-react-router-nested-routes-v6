@@ -1,29 +1,13 @@
 import { NavLink } from "react-router-dom";
-import "./NavBar.css";
 
 function NavBar() {
   return (
-    <nav>
-      <NavLink
-        to="/"
-        className="nav-link"
-      >
-        Home
-      </NavLink>
-      <NavLink
-        to="/about"
-        className="nav-link"
-      >
-        About
-      </NavLink>
-      <NavLink
-        to="/login"
-        className="nav-link"
-      >
-        Login
-      </NavLink>
+    <nav style={{ display: "flex", gap: "1rem", marginBottom: "1rem" }}>
+      <NavLink to="/">Home</NavLink>
+      <NavLink to="/about">About</NavLink>
+      <NavLink to="/login">Login</NavLink>
     </nav>
   );
-};
+}
 
 export default NavBar;
